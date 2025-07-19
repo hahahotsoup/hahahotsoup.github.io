@@ -12271,8 +12271,8 @@
 }
 
 :root.appearance-dark {
-  --primary-bg-color: #311d3f;
-  --second-bg-color: #2b2e4a;
+  --primary-bg-color: #1d262f;
+  --second-bg-color: #2b2e4a9d;
   --third-bg-color: #88304dcf;
   --primary-text-color: #fff;
   --second-text-color: #aaa;
@@ -12305,8 +12305,8 @@
 }
 @media (prefers-color-scheme: dark) {
   :root.appearance-auto {
-    --primary-bg-color: #311d3f;
-    --second-bg-color: #2b2e4a;
+    --primary-bg-color: #1d262f;
+    --second-bg-color: #2b2e4a9d;
     --third-bg-color: #88304dcf;
     --primary-text-color: #fff;
     --second-text-color: #aaa;
@@ -12356,6 +12356,25 @@
   margin: 0;
   height: 100vh;
   padding-top: 45px;
+}
+:root body .author-section {
+  text-align: center;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+:root body .author-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  display: block;
+}
+:root body .sns-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
 }
 :root body a {
   color: inherit;

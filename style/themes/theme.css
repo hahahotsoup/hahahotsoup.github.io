@@ -16,8 +16,8 @@
 }
 
 :root.appearance-dark {
-  --primary-bg-color: #311d3f;
-  --second-bg-color: #2b2e4a;
+  --primary-bg-color: #1d262f;
+  --second-bg-color: #2b2e4a9d;
   --third-bg-color: #88304dcf;
   --primary-text-color: #fff;
   --second-text-color: #aaa;
@@ -50,8 +50,8 @@
 }
 @media (prefers-color-scheme: dark) {
   :root.appearance-auto {
-    --primary-bg-color: #311d3f;
-    --second-bg-color: #2b2e4a;
+    --primary-bg-color: #1d262f;
+    --second-bg-color: #2b2e4a9d;
     --third-bg-color: #88304dcf;
     --primary-text-color: #fff;
     --second-text-color: #aaa;
