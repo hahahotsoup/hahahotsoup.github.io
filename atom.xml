@@ -3,11 +3,11 @@
   <title>Hexo</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://blog.hotsouprealm.top/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
-  <updated>2025-07-10T12:41:21.305Z</updated>
-  <id>http://example.com/</id>
+  <link href="https://blog.hotsouprealm.top/"/>
+  <updated>2025-07-28T14:54:07.372Z</updated>
+  <id>https://blog.hotsouprealm.top/</id>
   
   <author>
     <name>hahahotsoup</name>
@@ -17,9 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>学以致用——聊聊《被讨厌的勇气》的启示意义</title>
+    <link href="https://blog.hotsouprealm.top/2025/07/28/%E5%AD%A6%E4%BB%A5%E8%87%B4%E7%94%A8%E2%80%94%E2%80%94%E8%81%8A%E8%81%8A%E3%80%8A%E8%A2%AB%E8%AE%A8%E5%8E%8C%E7%9A%84%E5%8B%87%E6%B0%94%E3%80%8B%E7%9A%84%E5%90%AF%E7%A4%BA%E6%84%8F%E4%B9%89/"/>
+    <id>https://blog.hotsouprealm.top/2025/07/28/%E5%AD%A6%E4%BB%A5%E8%87%B4%E7%94%A8%E2%80%94%E2%80%94%E8%81%8A%E8%81%8A%E3%80%8A%E8%A2%AB%E8%AE%A8%E5%8E%8C%E7%9A%84%E5%8B%87%E6%B0%94%E3%80%8B%E7%9A%84%E5%90%AF%E7%A4%BA%E6%84%8F%E4%B9%89/</id>
+    <published>2025-07-28T13:37:27.131Z</published>
+    <updated>2025-07-28T14:54:07.372Z</updated>
+    
+    <content type="html"><![CDATA[<p>摘要：闲谈《被讨厌的勇气》</p><span id="more"></span><h1>0.前言</h1><p>hi，别来无恙哇<br>这是本博客的第二篇文章，亏我还没忘了这个博客<br>前段时间去医院做针灸的时候，医生说少阳穴（还是少冲穴？忘记了欸）是和情绪挂钩的，给我推荐了《被讨厌的勇气》这本书，想开导一下我<br>我用了四天的时间读完了这本书，只能说，阿德勒心理学，是真的超前</p><h1>1.心理自助</h1><p>这本书用对话聊天的体裁，给我们讲述了古老而又超前的阿德勒心理学，读起来一点都不枯燥<br>初读此书的读者就像书里的青年，受苦于现实的种种琐碎，着急去探究自身问题的解法，着急去辩驳老者的理论<br>如果说读者的思想是被青年牵着走，那么老者就是在一次一次推翻读者的理论，并重新树立新的价值理论，最后二者达到趋同<br>开篇先读到目的论（或决定论）的时候，属实是惊艳到了我。读这本书的时候不必去忙于查证，不如放下心态，让自己的思维就按照书里的走，到头来，真的会感到一切释然<br>如果你正处于生活的迷惘中，我真的很推荐你去读这本书</p><div class="warning"><p><strong>注意</strong><br>接下来含有剧透内容，会影响您对该书的阅读体验，观者自酌</p></div><h1>2.勇气</h1><p>这本书叫做《被讨厌的勇气》，书中也说人的烦恼，都来源于人际交往<br>然而，宇宙中不可能只有一个人生活，书中希望你做的，便是决定自己的幸福<br>这里摘自一条来自gigachad b站评论区下的一条评论<br>“不参与网络争端和依靠小团体认同感麻痹自己”<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p><hr class="footnotes-sep"><section class="footnotes"><ol class="footnotes-list"><li id="fn1" class="footnote-item"><p><a href="https://b23.tv/GsdWjUu">https://b23.tv/GsdWjUu</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p></li></ol></section>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;摘要：闲谈《被讨厌的勇气》&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="心理自助" scheme="https://blog.hotsouprealm.top/categories/%E5%BF%83%E7%90%86%E8%87%AA%E5%8A%A9/"/>
+    
+    <category term="碎碎念" scheme="https://blog.hotsouprealm.top/categories/%E5%BF%83%E7%90%86%E8%87%AA%E5%8A%A9/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    <category term="学习笔记" scheme="https://blog.hotsouprealm.top/categories/%E5%BF%83%E7%90%86%E8%87%AA%E5%8A%A9/%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>博客游记</title>
-    <link href="http://example.com/2025/06/14/%E5%8D%9A%E5%AE%A2%E6%B8%B8%E8%AE%B0/"/>
-    <id>http://example.com/2025/06/14/%E5%8D%9A%E5%AE%A2%E6%B8%B8%E8%AE%B0/</id>
+    <link href="https://blog.hotsouprealm.top/2025/06/14/%E5%8D%9A%E5%AE%A2%E6%B8%B8%E8%AE%B0/"/>
+    <id>https://blog.hotsouprealm.top/2025/06/14/%E5%8D%9A%E5%AE%A2%E6%B8%B8%E8%AE%B0/</id>
     <published>2025-06-14T11:27:58.090Z</published>
     <updated>2025-07-10T12:41:21.305Z</updated>
     
@@ -30,7 +53,7 @@
     
     
     
-    <category term="碎碎念" scheme="http://example.com/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    <category term="碎碎念" scheme="https://blog.hotsouprealm.top/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
     
     
   </entry>

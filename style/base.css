@@ -12272,13 +12272,13 @@
 
 :root.appearance-dark {
   --primary-bg-color: #1d262f;
-  --second-bg-color: #2b2e4a9d;
-  --third-bg-color: #88304dcf;
+  --second-bg-color: #2c39474a;
+  --third-bg-color: #1D262F;
   --primary-text-color: #fff;
   --second-text-color: #aaa;
   --border-line-color: rgba(255, 255, 255, 0.05);
   --border-line-color-2: rgba(255, 255, 255, 0.02);
-  --top-bar-bg-color: #e84545a7;
+  --top-bar-bg-color: #2C3947;
   --blockquote-border-color: #aaa;
   --table-border-color: #aaa;
   --pre-code-bg-color: #ffffff03;
@@ -12306,13 +12306,13 @@
 @media (prefers-color-scheme: dark) {
   :root.appearance-auto {
     --primary-bg-color: #1d262f;
-    --second-bg-color: #2b2e4a9d;
-    --third-bg-color: #88304dcf;
+    --second-bg-color: #2c39474a;
+    --third-bg-color: #1D262F;
     --primary-text-color: #fff;
     --second-text-color: #aaa;
     --border-line-color: rgba(255, 255, 255, 0.05);
     --border-line-color-2: rgba(255, 255, 255, 0.02);
-    --top-bar-bg-color: #e84545a7;
+    --top-bar-bg-color: #2C3947;
     --blockquote-border-color: #aaa;
     --table-border-color: #aaa;
     --pre-code-bg-color: #ffffff03;
