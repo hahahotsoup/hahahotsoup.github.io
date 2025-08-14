@@ -39,7 +39,19 @@
       /* 设置最大宽度，避免在大屏幕上过宽 */
       margin: 20px 0;
     }
-
+    .header-card-bilibili {
+      display: flex;
+      align-items: center;
+      background-color: #FF6699;
+      padding: 15px 30px;
+      /* 增加内边距，配合宽卡片 */
+      border-radius: 8px;
+      width: 90%;
+      /* 使用相对宽度，占父容器的90% */
+      max-width: 1200px;
+      /* 设置最大宽度，避免在大屏幕上过宽 */
+      margin: 20px 0;
+    }
     .header-card:hover {
       background-color: #3a4a56;
       /* 颜色变亮作为高光 */
@@ -48,6 +60,15 @@
       transform: translateY(-2px);
       /* 轻微上浮效果 */
     }
+    .header-card-bilibili:hover {
+      background-color: #FFB3CA;
+      /* 颜色变亮作为高光 */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      /* 添加阴影增强立体感 */
+      transform: translateY(-2px);
+      /* 轻微上浮效果 */
+    }
+
 
     /* LOGO 样式 */
     .header-logo {
@@ -128,7 +149,7 @@
             <p>此部分用于感谢帮助过热汤的人 排名不分先后</p>
             <a href="https://cybernekomata.github.io/" class="card-link" target="_blank">
               <div class="header-card">
-                <img src="https://blog.hotsouprealm.top/nekomata.png"
+                <img src="https://blog.hotsouprealm.top/pic/nekomata.png"
                   alt="Nekomata's blog!" class="header-logo" ,margin-left:0,margin-right:0 />
                 <div class="text-group">
                   <h2>Nekomata's blog</h2>
@@ -138,7 +159,7 @@
             </a>
             <div class="header-card">
               <img
-                src="https://blog.hotsouprealm.top/南曦.jpg"
+                src="https://blog.hotsouprealm.top/pic/南曦.jpg"
                 alt="南曦" class="header-logo" ,margin-left:0,margin-right:0 />
               <div class="text-group">
                 <h2>南曦</h2>
@@ -150,7 +171,7 @@
             <p>推荐链接</p>
             <a href="https://hgo-hg.github.io/HgO-Hgs/web1.2.html" class="card-link" target="_blank">
               <div class="header-card">
-                <img src="https://blog.hotsouprealm.top/HgOHg.png"
+                <img src="https://blog.hotsouprealm.top/pic/HgOHg.png"
                   alt="HgO-Hgのwebsite" class="header-logo" ,margin-left:0,margin-right:0 />
                 <div class="text-group">
                   <h2>HgO-Hgのwebsite</h2>
@@ -159,8 +180,8 @@
               </div>
             </a>
             <a href="https://space.bilibili.com/1987411833" class="card-link" target="_blank">
-              <div class="header-card">
-                <img src="https://blog.hotsouprealm.top/能量加油站.webp"
+              <div class="header-card-bilibili">
+                <img src="https://blog.hotsouprealm.top/pic/能量加油站.webp"
                   alt="能量加油站" class="header-logo" ,margin-left:0,margin-right:0 />
                 <div class="text-group">
                   <h2>能量加油站</h2>
@@ -198,8 +219,6 @@
         </i><i class="ri-creative-commons-by-line"> </i><i class="ri-creative-commons-nc-line"> </i><i
           class="ri-creative-commons-sa-line"></i></a><span></span></p>
   </footer>
-  <script async="" defer="" src="./热汤茶房_files/buttons.js.下载"></script>
-  <script src="./热汤茶房_files/post.js.下载"></script>
 </body>
 
 </html>
