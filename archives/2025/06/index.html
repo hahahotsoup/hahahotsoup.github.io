@@ -50,7 +50,7 @@
     grid-row: 2;
     grid-column: 2;
     width: 100%;
-}</style><div class="column is-full announcement-container"><div class="notification is-info"><span id="announcement">随机公告文字</span></div></div><section class="column posts-container"><article class="post-item-card"><section class="content post-card-content p-4 pb-5"><h2 class="mt-4 mb-0 is-family-serif"><a href="/%E5%8D%9A%E5%AE%A2%E6%B8%B8%E8%AE%B0/">博客游记</a></h2><time class="has-text-grey" datetime="2025-06-14T11:27:58.090Z">2025-06-14</time><p class="is-flex-grow-2 mt-2">摘要：简单讲讲建设博客的历程</p><a class="button is-default mt-2 has-text-weight-semibold" href="/%E5%8D%9A%E5%AE%A2%E6%B8%B8%E8%AE%B0/">更多</a></section></article></section><aside class="column is-hidden-mobile is-4-tablet is-3-widescreen sidebar-container"><div style="position: sticky; top: 50px;"><main class="aside-card-container archives-widget is-in-archive-page"><h3>归档</h3><section><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/08/">八月 2025</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/07/">七月 2025</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">六月 2025</a><span class="archive-list-count">1</span></li></ul></section></main></div></aside></div></article><script>$claudia.fadeInImage(null, $claudia.blurBackdropImg)
+}</style><div class="column is-full announcement-container"><div class="notification is-info"><span id="announcement">欢迎来到热汤茶房！</span></div></div><section class="column posts-container"><article class="post-item-card"><section class="content post-card-content p-4 pb-5"><h2 class="mt-4 mb-0 is-family-serif"><a href="/%E5%8D%9A%E5%AE%A2%E6%B8%B8%E8%AE%B0/">博客游记</a></h2><time class="has-text-grey" datetime="2025-06-14T11:27:58.090Z">2025-06-14</time><p class="is-flex-grow-2 mt-2">摘要：简单讲讲建设博客的历程</p><a class="button is-default mt-2 has-text-weight-semibold" href="/%E5%8D%9A%E5%AE%A2%E6%B8%B8%E8%AE%B0/">更多</a></section></article></section><aside class="column is-hidden-mobile is-4-tablet is-3-widescreen sidebar-container"><div style="position: sticky; top: 50px;"><main class="aside-card-container archives-widget is-in-archive-page"><h3>归档</h3><section><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/08/">八月 2025</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/07/">七月 2025</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">六月 2025</a><span class="archive-list-count">1</span></li></ul></section></main></div></aside></div></article><script>$claudia.fadeInImage(null, $claudia.blurBackdropImg)
 window.addEventListener('resize', $claudia.throttle(function () {
     var images = document.querySelectorAll('.js-img-fadeIn')
 
@@ -60,13 +60,26 @@ window.addEventListener('resize', $claudia.throttle(function () {
 // 公告栏随机文字
 var announcements = [
     "欢迎来到热汤茶房！",
-    "今天天气真好呢。",
-    "记得多喝水哦。",
-    "生活需要仪式感。"
+    "你知道吗 2025.8.21 这一天网站拥有了公告板",
+    ”计划增加一个船新界面“
 ];
 var announcementElement = document.getElementById('announcement');
+var currentIndex = 0;
+
+function rotateAnnouncement() {
+    announcementElement.style.opacity = 0;
+    setTimeout(() => {
+        currentIndex = (currentIndex + 1) % announcements.length;
+        announcementElement.textContent = announcements[currentIndex];
+        announcementElement.style.opacity = 1;
+    }, 800); // 过渡时间需要匹配CSS设置
+}
+
+// 初始化并每5秒轮换
 if (announcementElement) {
-    announcementElement.textContent = announcements[Math.floor(Math.random() * announcements.length)];
+    setInterval(rotateAnnouncement, 5000);
+    announcementElement.textContent = announcements[0];
+    announcementElement.style.transition = 'opacity 0.8s ease-in-out';
 }</script></main><footer class="is-flex is-flex-direction-column is-align-items-center is-flex-shrink-0 is-family-serif"><section class="sns-container"><a title="github" target="_blank" rel="noopener nofollow" href="//github.com/hahahotsoup"><i class="ri-github-line"></i></a><a title="bilibili" target="_blank" rel="noopener nofollow" href="//space.bilibili.com/1714437150"><i class="ri-bilibili-line"></i></a><a title="twitter" target="_blank" rel="noopener nofollow" href="//twitter.com/hahahotsoup"><i class="ri-twitter-line"></i></a><a title="email" target="_blank" rel="noopener nofollow" href="mailto:hahahotsoup@foxmail.com"><i class="ri-mail-line"></i></a></section><p><span>Copyright ©</span><span> hahahotsoup</span></p><div class="is-flex is-justify-content-center is-flex-wrap-wrap"><p>Powered by Hexo &verbar;&nbsp;</p><p class="is-flex is-justify-content-center"><a title="Hexo theme" target="_blank" rel="noopener" href="//github.com/Haojen/hexo-theme-Claudia/blob/master/README-CN.md">Theme Claudia;</a></p></div><div></div><p> <a title="法律文书" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.zh-hans"> <i class="ri-creative-commons-line"> </i><i class="ri-creative-commons-by-line"> </i><i class="ri-creative-commons-nc-line"> </i><i class="ri-creative-commons-sa-line"></i></a><span></span></p></footer><script async defer src="https://buttons.github.io/buttons.js"></script><script>$claudia.fadeInImage(null, $claudia.blurBackdropImg)
 window.addEventListener('resize', $claudia.throttle(function () {
     var images = document.querySelectorAll('.js-img-fadeIn')
@@ -77,11 +90,24 @@ window.addEventListener('resize', $claudia.throttle(function () {
 // 公告栏随机文字
 var announcements = [
     "欢迎来到热汤茶房！",
-    "今天天气真好呢。",
-    "记得多喝水哦。",
-    "生活需要仪式感。"
+    "你知道吗 2025.8.21 这一天网站拥有了公告板",
+    ”计划增加一个船新界面“
 ];
 var announcementElement = document.getElementById('announcement');
+var currentIndex = 0;
+
+function rotateAnnouncement() {
+    announcementElement.style.opacity = 0;
+    setTimeout(() => {
+        currentIndex = (currentIndex + 1) % announcements.length;
+        announcementElement.textContent = announcements[currentIndex];
+        announcementElement.style.opacity = 1;
+    }, 800); // 过渡时间需要匹配CSS设置
+}
+
+// 初始化并每5秒轮换
 if (announcementElement) {
-    announcementElement.textContent = announcements[Math.floor(Math.random() * announcements.length)];
+    setInterval(rotateAnnouncement, 5000);
+    announcementElement.textContent = announcements[0];
+    announcementElement.style.transition = 'opacity 0.8s ease-in-out';
 }</script></body></html>
