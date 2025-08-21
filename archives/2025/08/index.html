@@ -42,6 +42,7 @@
     background-color: #2c39474a;
     transition: all 0.8s ease-in-out; /* 扩展过渡效果 */
     cursor: default; /* 默认光标 */
+    color:rgb(255, 255, 255) ;
 }
 /* 公告板按钮样式 */
 .notification.is-info.bilibili-link {
@@ -61,7 +62,7 @@
     grid-row: 2;
     grid-column: 2;
     width: 100%;
-}</style><div class="column is-full announcement-container"><div class="notification is-info" id="announcement-container"><span id="announcement">欢迎来到热汤茶房！</span></div></div><section class="column posts-container"><article class="post-item-card"><section class="content post-card-content p-4 pb-5"><h2 class="mt-4 mb-0 is-family-serif"><a href="/%E4%BD%A0%E6%88%91%E7%9A%84%E4%B8%8D%E5%90%8C%E8%AF%BE%E9%A2%98/">你我的不同课题</a></h2><time class="has-text-grey" datetime="2025-08-11T05:39:58.477Z">2025-08-11</time><p class="is-flex-grow-2 mt-2">摘要：闲谈《被讨厌的勇气》的课题与课题分离 #2</p><a class="button is-default mt-2 has-text-weight-semibold" href="/%E4%BD%A0%E6%88%91%E7%9A%84%E4%B8%8D%E5%90%8C%E8%AF%BE%E9%A2%98/">更多</a></section></article></section><aside class="column is-hidden-mobile is-4-tablet is-3-widescreen sidebar-container"><div style="position: sticky; top: 50px;"><main class="aside-card-container archives-widget is-in-archive-page"><h3>归档</h3><section><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/08/">八月 2025</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/07/">七月 2025</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">六月 2025</a><span class="archive-list-count">1</span></li></ul></section></main></div></aside></div></article><script>$claudia.fadeInImage(null, $claudia.blurBackdropImg)
+}</style><div class="column is-full announcement-container"><div class="notification is-info" id="announcement-container"><span id="announcement">欢迎来到热汤茶房！</span></div></div><section class="column posts-container"><article class="post-item-card"><section class="content post-card-content p-4 pb-5"><h2 class="mt-4 mb-0 is-family-serif"><a href="/%E4%BD%A0%E6%88%91%E7%9A%84%E4%B8%8D%E5%90%8C%E8%AF%BE%E9%A2%98/">你我的不同课题</a></h2><time class="has-text-grey" datetime="2025-08-11T05:39:58.477Z">2025-08-11</time><p class="is-flex-grow-2 mt-2">摘要：闲谈《被讨厌的勇气》的课题与课题分离 #2</p><a class="button is-default mt-2 has-text-weight-semibold" href="/%E4%BD%A0%E6%88%91%E7%9A%84%E4%B8%8D%E5%90%8C%E8%AF%BE%E9%A2%98/">更多</a></section></article></section><aside class="column is-hidden-mobile is-4-tablet is-3-widescreen sidebar-container"><div style="position: sticky; top: 50px;"><main class="aside-card-container archives-widget is-in-archive-page"><h3>归档</h3><section><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/08/">八月 2025</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/07/">七月 2025</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">六月 2025</a><span class="archive-list-count">1</span></li></ul></section></main></div></aside></div></article><script>$claudia.fadeInImage(null, $claudia.blurBackdropImg)
 window.addEventListener('resize', $claudia.throttle(function () {
     var images = document.querySelectorAll('.js-img-fadeIn')
 
@@ -81,20 +82,28 @@ const announcementText = document.getElementById('announcement');
 
 // 轮播函数
 function rotateAnnouncement() {
-    currentIndex = (currentIndex + 1) % announcements.length;
-    const current = announcements[currentIndex];
+    // 先淡出
+    announcementContainer.style.opacity = '0';
     
-    // 更新文本内容
-    announcementText.textContent = current.content;
-    
-    // 根据类型设置样式和行为
-    if (current.type === 'bilibili') {
-        announcementContainer.classList.add('bilibili-link');
-        announcementContainer.onclick = () => window.open(current.url, '_blank');
-    } else {
-        announcementContainer.classList.remove('bilibili-link');
-        announcementContainer.onclick = null;
-    }
+    setTimeout(() => {
+        currentIndex = (currentIndex + 1) % announcements.length;
+        const current = announcements[currentIndex];
+        
+        // 更新文本内容
+        announcementText.textContent = current.content;
+        
+        // 根据类型设置样式和行为
+        if (current.type === 'bilibili') {
+            announcementContainer.classList.add('bilibili-link');
+            announcementContainer.onclick = () => window.open(current.url, '_blank');
+        } else {
+            announcementContainer.classList.remove('bilibili-link');
+            announcementContainer.onclick = null;
+        }
+        
+        // 再淡入
+        announcementContainer.style.opacity = '1';
+    }, 800); // 等待淡出动画完成，与CSS过渡时间匹配
 }
 
 // 初始设置
@@ -121,20 +130,28 @@ const announcementText = document.getElementById('announcement');
 
 // 轮播函数
 function rotateAnnouncement() {
-    currentIndex = (currentIndex + 1) % announcements.length;
-    const current = announcements[currentIndex];
+    // 先淡出
+    announcementContainer.style.opacity = '0';
     
-    // 更新文本内容
-    announcementText.textContent = current.content;
-    
-    // 根据类型设置样式和行为
-    if (current.type === 'bilibili') {
-        announcementContainer.classList.add('bilibili-link');
-        announcementContainer.onclick = () => window.open(current.url, '_blank');
-    } else {
-        announcementContainer.classList.remove('bilibili-link');
-        announcementContainer.onclick = null;
-    }
+    setTimeout(() => {
+        currentIndex = (currentIndex + 1) % announcements.length;
+        const current = announcements[currentIndex];
+        
+        // 更新文本内容
+        announcementText.textContent = current.content;
+        
+        // 根据类型设置样式和行为
+        if (current.type === 'bilibili') {
+            announcementContainer.classList.add('bilibili-link');
+            announcementContainer.onclick = () => window.open(current.url, '_blank');
+        } else {
+            announcementContainer.classList.remove('bilibili-link');
+            announcementContainer.onclick = null;
+        }
+        
+        // 再淡入
+        announcementContainer.style.opacity = '1';
+    }, 800); // 等待淡出动画完成，与CSS过渡时间匹配
 }
 
 // 初始设置
