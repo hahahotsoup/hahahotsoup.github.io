@@ -7416,7 +7416,7 @@ label.panel-block:hover {
   }
   .column.is-4, .column.is-4-tablet {
     flex: none;
-    width: 33.33333%;
+    width: 100%;
   }
   .column.is-offset-4, .column.is-offset-4-tablet {
     margin-left: 33.33333%;
@@ -7901,7 +7901,7 @@ label.panel-block:hover {
   }
   .column.is-3-widescreen {
     flex: none;
-    width: 25%;
+    width: 100%;
   }
   .column.is-offset-3-widescreen {
     margin-left: 25%;
