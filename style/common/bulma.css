@@ -385,10 +385,11 @@ code {
 
 hr {
   background-color: whitesmoke;
-  border: none;
   display: block;
   height: 2px;
-  margin: 1.5rem 0;
+  margin: 30px auto;
+  border: 1px solid #35404d;
+}
 }
 
 img {
