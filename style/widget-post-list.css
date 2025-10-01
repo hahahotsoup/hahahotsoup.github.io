@@ -104,6 +104,18 @@
 }
 .post-container .profile-widget {
   min-height: 300px;
+}
+.post-container .stats-widget > section {
+  padding: 10px 15px;
+}
+.post-container .stats-widget .has-text-grey {
+  color: var(--second-text-color);
+}
+.post-container .stats-widget .has-text-weight-semibold {
+  color: var(--primary-text-color);
+}
+.post-container .profile-widget {
+  min-height: 300px;
   padding-bottom: 0;
 }
 .post-container .profile-widget img {
