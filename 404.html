@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="appearance-auto">
+
+<head>
+    <meta charset="UTF-8">
+    <title>页面不存在 - 热汤茶房</title>
+    <meta name="description" content="抱歉，您访问的页面不存在">
+    <meta name="viewport"
+        content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://blog.hotsouprealm.top/style/common/remixicon.css">
+    <!-- Google Analytics --><!-- End Google Analytics -->
+    <!-- Baidu Analytics --><!-- End Baidu Analytics -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="icon" href="https://blog.hotsouprealm.top/images/favicon.ico">
+    <link rel="stylesheet" href="https://blog.hotsouprealm.top/style/common/bulma.css">
+    <link rel="stylesheet" href="https://blog.hotsouprealm.top/style/base.css">
+    <link rel="stylesheet" href="https://blog.hotsouprealm.top/style/common/helper.css">
+    <script src="https://blog.hotsouprealm.top/js/common.js"></script>
+    <link rel="stylesheet" href="https://blog.hotsouprealm.top/style/widget-post-list.css">
+    <meta name="generator" content="Hexo 7.3.0">
+    <style type="text/css" abt="234"></style>
+    <meta name="description" content="谨以此页记录下热汤的好朋友们"">
+  <meta name=" generator" content="Hexo 7.3.0">
+    <style>
+        hr {
+            margin: 30px auto;
+            border: 1px solid #35404d;
+        }
+
+        .header-card {
+            display: flex;
+            align-items: center;
+            background-color: #2f3e46;
+            padding: 15px 30px;
+            /* 增加内边距，配合宽卡片 */
+            border-radius: 8px;
+            width: 90%;
+            /* 使用相对宽度，占父容器的90% */
+            max-width: 1200px;
+            /* 设置最大宽度，避免在大屏幕上过宽 */
+            margin: 20px 0;
+        }
+
+        .header-card-bilibili {
+            display: flex;
+            align-items: center;
+            background-color: #FF6699;
+            padding: 15px 30px;
+            /* 增加内边距，配合宽卡片 */
+            border-radius: 8px;
+            width: 90%;
+            /* 使用相对宽度，占父容器的90% */
+            max-width: 1200px;
+            /* 设置最大宽度，避免在大屏幕上过宽 */
+            margin: 20px 0;
+        }
+
+        .header-card:hover {
+            background-color: #3a4a56;
+            /* 颜色变亮作为高光 */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            /* 添加阴影增强立体感 */
+            transform: translateY(-2px);
+            /* 轻微上浮效果 */
+        }
+
+        .header-card-bilibili:hover {
+            background-color: #FFB3CA;
+            /* 颜色变亮作为高光 */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            /* 添加阴影增强立体感 */
+            transform: translateY(-2px);
+            /* 轻微上浮效果 */
+        }
+
+
+        /* LOGO 样式 */
+        .header-logo {
+            width: 70px;
+            /* 稍微增大LOGO */
+            height: 70px;
+            border-radius: 50%;
+            margin: 0 !important;
+            /* 增加与文字的间距 */
+        }
+
+        /* 文字容器 */
+        .text-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 英文标题样式 */
+        .text-group h2 {
+            margin: 0;
+            font-size: 1.8rem;
+            /* 增大字体 */
+            color: #ffffff;
+            font-family: "Arial", sans-serif;
+            font-weight: 600;
+        }
+
+        /* 中文副标题样式 */
+        .text-group p {
+            margin: 0;
+            font-size: 1.2rem;
+            /* 增大字体 */
+            color: #dcdcdc;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        .error-container {
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            background-color: var(--third-bg-color);
+            border-radius: var(--borderRadius);
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--activeColor);
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: slideUp 0.6s ease-out 0.2s forwards;
+        }
+
+        .error-message {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 0.6s ease-out 0.5s forwards;
+        }
+
+        .error-description {
+            font-size: 1rem;
+            color: var(--second-text-color);
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: fadeIn 0.6s ease-out 0.8s forwards;
+        }
+
+        .home-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--activeColor);
+            color: white;
+            border: none;
+            border-radius: var(--borderRadius);
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUp 0.6s ease-out 1.1s forwards;
+        }
+
+        .home-button:hover {
+            background-color: #2366d1;
+            transform: translateY(18px) scale(1.03);
+        }
+
+        .tea-cup {
+            position: relative;
+            width: 120px;
+            height: 100px;
+            margin: 30px auto;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 1.4s forwards;
+        }
+
+        .cup {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 60px;
+            border: 4px solid var(--activeColor);
+            border-radius: 0 0 50% 50%;
+            background-color: rgba(50, 115, 220, 0.1);
+            animation: fillTea 3s ease-in-out infinite;
+        }
+
+        .cup-handle {
+            position: absolute;
+            bottom: 10px;
+            right: -25px;
+            width: 30px;
+            height: 35px;
+            border: 4px solid var(--activeColor);
+            border-radius: 0 50% 50% 0;
+            border-left: none;
+        }
+
+        .steam {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 40px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .steam span {
+            width: 6px;
+            height: 30px;
+            background-color: rgba(50, 115, 220, 0.3);
+            border-radius: 5px;
+            animation: steam 2s ease-in-out infinite;
+        }
+
+        .steam span:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .steam span:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        .steam span:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        footer {
+            padding: 20px 0;
+            text-align: center;
+            color: var(--second-text-color);
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            margin: 0 30px;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--second-text-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: var(--activeColor);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes steam {
+            0% {
+                height: 0;
+                opacity: 0;
+                transform: translateY(0);
+            }
+
+            50% {
+                opacity: 0.6;
+            }
+
+            100% {
+                height: 40px;
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes fillTea {
+
+            0%,
+            100% {
+                background-color: rgba(50, 115, 220, 0.1);
+            }
+
+            50% {
+                background-color: rgba(50, 115, 220, 0.3);
+            }
+        }
+
+        /* 响应式设计 */
+        @media screen and (max-width: 768px) {
+            .error-code {
+                font-size: 6rem;
+            }
+
+            .error-message {
+                font-size: 1.2rem;
+            }
+
+            .error-container {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div class="error-container">
+            <div class="error-code">404</div>
+            <h1 class="error-message">页面不存在</h1>
+            <p class="error-description">你似乎进入了茶馆尚未开放的区域</p>
+
+            <div class="tea-cup">
+                <div class="cup">
+                    <div class="cup-handle"></div>
+                </div>
+                <div class="steam">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <a href="/" class="home-button">返回首页</a>
+        </div>
+    </main>
+
+    
+
+    <script>
+        // 检测系统暗色模式并设置相应的类
+        function detectDarkMode() {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.classList.remove('appearance-light');
+                document.documentElement.classList.add('appearance-dark');
+            } else {
+                document.documentElement.classList.remove('appearance-dark');
+                document.documentElement.classList.add('appearance-light');
+            }
+        }
+
+        // 初始化时检测暗色模式
+        if (document.documentElement.classList.contains('appearance-auto')) {
+            detectDarkMode();
+
+            // 监听系统暗色模式变化
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', detectDarkMode);
+        }
+    </script>
+</body>
+
+</html>
