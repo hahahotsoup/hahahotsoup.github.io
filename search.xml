@@ -4,12 +4,20 @@
   
     
     <entry>
-      <title>page</title>
+      <title>小小的我</title>
       <link href="/page/"/>
       <url>/page/</url>
       
         <content type="html"><![CDATA[]]></content>
       
+      
+      <categories>
+          
+          <category> 碎碎念 </category>
+          
+          <category> 心理自助 </category>
+          
+      </categories>
       
       
     </entry>
