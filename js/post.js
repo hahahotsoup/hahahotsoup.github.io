@@ -167,21 +167,21 @@ var $posts = {
         })
     },
     mounted: function () {
-        hljs && hljs.initHighlighting()
+        // hljs && hljs.initHighlighting()
 
-        var Scroller = this.scroller()
-        var scrollerInstance = new Scroller()
+        // var Scroller = this.scroller()
+        // var scrollerInstance = new Scroller()
 
-        var catalogueHighlight = this.catalogueHighlight()
-        catalogueHighlight && scrollerInstance.callbacks.push(catalogueHighlight)
+        // var catalogueHighlight = this.catalogueHighlight()
+        // catalogueHighlight && scrollerInstance.callbacks.push(catalogueHighlight)
 
-        scrollerInstance.callbacks.push(this.showTopic)
+        // scrollerInstance.callbacks.push(this.showTopic)
 
-        scrollerInstance.bindScrollEvent()
+        // scrollerInstance.bindScrollEvent()
 
-        $claudia.fadeInImage(document.querySelectorAll('.post-content img'))
+        // $claudia.fadeInImage(document.querySelectorAll('.post-content img'))
 
-        document.getElementById('postTopic').addEventListener('click', this.smoothScrollToTop)
+        // document.getElementById('postTopic').addEventListener('click', this.smoothScrollToTop)
 
         window.Valine && this.addValineComment()
     }
