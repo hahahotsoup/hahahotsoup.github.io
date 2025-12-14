@@ -57,5 +57,31 @@ window.$claudia = {
         })
 
         callback && callback(media.matches ? 'dark' : 'light')
+    },
+    handleHeaderScroll() {
+        var header = document.querySelector('.header-widget')
+        if (!header) return
+
+        var lastScrollTop = 0
+        var scrollThreshold = 50
+
+        window.addEventListener('scroll', this.throttle(function() {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop
+
+            if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
+                // 向下滚动，隐藏header
+                header.style.transform = 'translateY(-100%)'
+            } else {
+                // 向上滚动，显示header
+                header.style.transform = 'translateY(0)'
+            }
+
+            lastScrollTop = scrollTop
+        }, 100))
     }
 }
+
+// 初始化header滚动效果
+document.addEventListener('DOMContentLoaded', function() {
+    window.$claudia.handleHeaderScroll()
+})

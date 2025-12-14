@@ -12420,11 +12420,12 @@
   z-index: 100;
   overflow: hidden;
   width: 100vw;
-  height: 42px;
+  height: 60px;
   padding: 0 15px;
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   background: var(--top-bar-bg-color);
+  transition: transform 0.3s ease-in-out;
 }
 .header-widget a {
   margin: 0 8px;
