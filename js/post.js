@@ -179,7 +179,7 @@ var $posts = {
 
         // scrollerInstance.bindScrollEvent()
 
-        // $claudia.fadeInImage(document.querySelectorAll('.post-content img'))
+        $claudia.fadeInImage(document.querySelectorAll('.post-content img'))
 
         // document.getElementById('postTopic').addEventListener('click', this.smoothScrollToTop)
 
