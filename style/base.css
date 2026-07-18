@@ -12275,7 +12275,7 @@
   --second-bg-color: #2c39474a;
   --third-bg-color: #1D262F;
   --primary-text-color: #fff;
-  --second-text-color: #aaa;
+  --second-text-color: #b0b0b0;
   --border-line-color: rgba(255, 255, 255, 0.05);
   --border-line-color-2: rgba(255, 255, 255, 0.02);
   --top-bar-bg-color: #2C3947;
@@ -12309,7 +12309,7 @@
     --second-bg-color: #2c39474a;
     --third-bg-color: #1D262F;
     --primary-text-color: #fff;
-    --second-text-color: #aaa;
+    --second-text-color: #b0b0b0;
     --border-line-color: rgba(255, 255, 255, 0.05);
     --border-line-color-2: rgba(255, 255, 255, 0.02);
     --top-bar-bg-color: #2C3947;
@@ -12388,6 +12388,20 @@
   outline-offset: 2px;
   border-radius: 2px;
 }
+:root body .appearance-dark .has-text-grey {
+  color: #9a9a9a !important;
+}
+:root body .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
 :root body .tag.post-item-tag {
   margin-right: 5px;
   font-weight: bold;
@@ -12416,6 +12430,14 @@
 :root body > footer .sns-container .iconfont {
   margin: 0 5px;
   font-size: 30px;
+}
+:root body > footer .sns-container a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  min-height: 28px;
+  font-size: 28px;
 }
 
 .header-widget {
