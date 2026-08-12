@@ -1,0 +1,325 @@
+<!DOCTYPE html><html class="appearance-dark" lang="zh-CN"><head><meta charset="UTF-8"><title>热汤茶馆的凉拌鸡丝  ——读不进去书的人，做了一个读书的软件</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>@font-face {
+  font-family: "remixicon";
+  src: url("https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.woff2") format("woff2"),
+       url("https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.woff") format("woff");
+  font-display: swap;
+}
+[class^="ri-"], [class*=" ri-"] {
+  font-family: 'remixicon' !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ri-bilibili-line:before { content: "\eac0"; }
+.ri-creative-commons-by-line:before { content: "\ebf2"; }
+.ri-creative-commons-line:before { content: "\ebf4"; }
+.ri-creative-commons-nc-line:before { content: "\ebf6"; }
+.ri-creative-commons-sa-line:before { content: "\ebfa"; }
+.ri-double-quotes-l:before { content: "\ec51"; }
+.ri-double-quotes-r:before { content: "\ec52"; }
+.ri-github-line:before { content: "\edcb"; }
+.ri-mail-line:before { content: "\eef6"; }
+.ri-twitter-line:before { content: "\f23b"; }</style><!-- Google Analytics --><!-- End Google Analytics -->
+<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/images/favicon.ico"><link rel="stylesheet" href="/style/common/bulma.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/style/common/bulma.css"></noscript><link rel="stylesheet" href="/style/base.css"><link rel="stylesheet" href="/style/common/helper.css"><script src="/js/common.js"></script><link rel="stylesheet" href="/style/post.css"><link rel="stylesheet" href="/style/themes/highlight-theme-light.css"><link rel="stylesheet" href="/style/common/jquery.fancybox.min.css"><script src="/js/highlight.pack.js"></script><meta name="description" content="生命总会自己找到出路
+
+最近茶馆连着发了几篇
+《杂鱼ai就是在不懂装懂喵》
+《再见，MTR；你好，Create》
+《年度总结与发布会》
+看上去毫不相干：一个聊 AI 立场，一个聊 MC 模组，一个聊博客生死
+但它们和我这个暑假干的事，
+其实是同一个故事，
+讲了三遍
+我从头讲一遍完整的
+先写了个 v0.1
+7 月 1.."><meta name="generator" content="Hexo 7.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="热汤茶馆" type="application/atom+xml">
+</head><body class="is-flex is-flex-direction-column"><header class="header-widget is-flex-shrink-0 is-hidden-mobile"><div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height"><section class="is-hidden-mobile is-flex-shrink-0"><h2><a href="/">热汤茶馆</a></h2></section><h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0" aria-label="导航"><div class="is-full-height" id="postTopic"><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">读不进去书的人，做了一个读书的软件</p></div></h3><aside class="is-flex-shrink-0"><h3 class="is-inline-block"><a href="/">首页</a></h3><h3 class="is-inline-block"><a href="/%E8%8C%B6%E6%88%BF%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E5%BC%8F">关于</a></h3><h3 class="is-inline-block"><a href="/categories/%E9%97%B2%E8%8C%B6%E4%BC%9A/">茶话会</a></h3><h3 class="is-inline-block"><a href="/friends">友链</a></h3><h3 class="is-inline-block"><a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener">开往</a></h3></aside></div></header><header class="is-flex header-widget is-flex-shrink-0 is-align-items-center is-justify-content-center is-hidden-tablet"><h3 class="is-inline-block"><a href="/">首页</a></h3><h3 class="is-inline-block"><a href="/%E8%8C%B6%E6%88%BF%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E5%BC%8F">关于</a></h3><h3 class="is-inline-block"><a href="/categories/%E9%97%B2%E8%8C%B6%E4%BC%9A/">茶话会</a></h3><h3 class="is-inline-block"><a href="/friends">友链</a></h3><h3 class="is-inline-block"><a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener">开往</a></h3></header><main><div class="container is-max-widescreen content section post-page pt-4 px-4"><div class="columns is-flex-desktop is-justify-content-center is-flex-direction-row-reverse"><div class="column is-3 is-hidden-mobile"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%88%E5%86%99%E4%BA%86%E4%B8%AA-v0-1"><span class="toc-text">先写了个 v0.1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%84%B6%E5%90%8E%E6%88%91%E5%8E%BB%E7%8E%A9-MC-%E4%BA%86"><span class="toc-text">然后我去玩 MC 了</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AB%E6%9C%88%E5%88%9D-%E8%BF%B7%E7%A6%BB"><span class="toc-text">八月初 迷离</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E6%9C%88-8-%E6%97%A5-%E6%AD%A3%E5%BC%8F%E6%8D%A1%E8%B5%B7"><span class="toc-text">8 月 8 日 正式捡起</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%81%87%E8%A3%85%E9%99%8C%E7%94%9F%E4%BA%BA"><span class="toc-text">假装陌生人</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sip-%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">sip 是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E4%B8%AA%E9%87%8D%E5%BA%A6%E7%9A%84-AI-%E7%94%A8%E6%88%B7"><span class="toc-text">一个重度的 AI 用户</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E-%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%A0%B9%E6%9C%AC%E4%B8%8D%E7%94%A8%E4%BA%A7%E5%93%81"><span class="toc-text">关于&quot;产品经理根本不用产品&quot;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%8A%E4%B8%80%E6%AE%B5%E8%90%BD"><span class="toc-text">告一段落</span></a></li></ol></div><div class="column is-9"><header class="my-4"></header><h1 class="mt-0 mb-1 is-family-serif" id="postTitle">读不进去书的人，做了一个读书的软件</h1><time class="has-text-grey" datetime="2026-08-12T14:52:08.826Z">2026-08-12</time><article class="mt-2 post-content"><p>生命总会自己找到出路</p>
+<span id="more"></span>
+<p>最近茶馆连着发了几篇<br>
+《杂鱼ai就是在不懂装懂喵》<br>
+《再见，MTR；你好，Create》<br>
+《年度总结与发布会》</p>
+<p>看上去毫不相干：一个聊 AI 立场，一个聊 MC 模组，一个聊博客生死</p>
+<p>但它们和我这个暑假干的事，<br>
+其实是同一个故事，<br>
+讲了三遍</p>
+<p>我从头讲一遍完整的</p>
+<h2 id="先写了个-v0-1">先写了个 v0.1</h2>
+<p>7 月 15 日，<br>
+我写了个 RSS 阅读器</p>
+<p>起因很简单，<br>
+我读不进去书，<br>
+但对文字又有点不甘心，<br>
+想自己搞点东西出来</p>
+<p>那时候 AI 刚给了我"理解万岁"的感觉，<br>
+你写得再碎，再乱，<br>
+它也能接住，<br>
+不审判你</p>
+<p>我就在想，<br>
+能不能让 AI 帮我读</p>
+<p>早期就是拿一个 while 循环起步，<br>
+AI 辅助把最基础的数据库，网络处理，diff 写了<br>
+版本号叫 v0.1</p>
+<p>写完我就搁下了</p>
+<h2 id="然后我去玩-MC-了">然后我去玩 MC 了</h2>
+<p>接下来一个月，<br>
+我跑去玩 Minecraft 服务器</p>
+<p>先从 MTR 入手，<br>
+就是那个轨道交通模组<br>
+很快发现它上限低，<br>
+列车是别人造好的，你只能挑<br>
+座椅是纯贴图，坐进去像个穿模的幽灵<br>
+追加包社区更是灾难，<br>
+资源散落在 QQ 群，网盘，论坛<br>
+版权混乱到你买到的不是文件，是使用权</p>
+<p>于是我迁移到 Create 机械动力<br>
+那篇《再见，MTR；你好，Create》就是那时候写的<br>
+Create 给你转向架和车壳，<br>
+你自己造火车<br>
+前者是消费，后者是创造</p>
+<p>而且玩 Create 期间，<br>
+我还干了一件认真的事，<br>
+给机械动力的火车写了个报站 mod<br>
+列车到站自动报站，<br>
+花了一点心力，<br>
+发到 B 站了<br>
+BV1bAGN6fEcm</p>
+<p>现在回头看，<br>
+那大概是我第一次自己动手"造"东西，<br>
+而不是用别人造好的东西</p>
+<h2 id="八月初-迷离">八月初 迷离</h2>
+<p>服务器最终没起来，<br>
+花了钱，<br>
+只有两个人陪我，<br>
+城市没建成，<br>
+地铁没规划好</p>
+<p>我是建筑苦手，<br>
+很内耗</p>
+<p>八月初那阵子，<br>
+我整个人是飘的，<br>
+既不想学习，<br>
+也提不起劲做任何事，<br>
+心里清楚该干嘛，<br>
+就是动不了</p>
+<h2 id="8-月-8-日-正式捡起">8 月 8 日 正式捡起</h2>
+<p>8 月 8 日，<br>
+我把那个搁了一个多月的 v0.1 捡了起来，<br>
+这次是认真当回事做</p>
+<p>然后就是这五天</p>
+<p>v1.0，<br>
+8 月 11 日，<br>
+首个正式版，<br>
+51 项功能测试，<br>
+7.1 分，<br>
+揪出 11 项缺陷，<br>
+<code>-l</code> 列表 O(n²) 卡死，<br>
+SSRF，<br>
+终端注入，<br>
+主库损坏裸崩，<br>
+每一项都修掉，<br>
+逐项复测</p>
+<p>v1.1，<br>
+跨源去重，<br>
+Source Policy，<br>
+阅读报告，<br>
+Onboarding，<br>
+第二轮 28 项测试，<br>
+23 过 5 败</p>
+<p>v1.1.4，<br>
+最要命的一段，<br>
+跨源去重从"两两配对"重构为"重复簇"，<br>
+旧版遇到 101 篇完全重复的文章会输出上万对结果直接爆炸，<br>
+重构后变成 1 个簇，357 字节，765 毫秒，<br>
+期间还发现过 exe 和源码版本不一致，<br>
+同一个函数，<br>
+本地和 GitHub 上算出来结果不同，<br>
+查了半天是复制错版本</p>
+<p>最后 +696 行，零回归，<br>
+总分 8.4，<br>
+从"能用"到"可信任"</p>
+<p>代码还是坚持单文件，<br>
+最大到过 440KB，<br>
+后来才切分出 Sumenia.cs（遥测）和 Tui.cs（视图），<br>
+主体 RssReader.cs 留在 396KB，<br>
+拆到这儿就不拆了</p>
+<p>为什么执着于单文件，<br>
+三个原因，<br>
+都是我踩过坑之后总结的</p>
+<p>一是文件太碎，<br>
+AI 会漏看某个文件，<br>
+然后在别处重复造轮子，<br>
+重复造轮子是我最讨厌的事</p>
+<p>二是碎文件增加维护负担，<br>
+相近功能之间有灰色地带，<br>
+放哪个目录都不合适，<br>
+强行分反而制造"我该去哪找这个逻辑"的问题</p>
+<p>三是一条门道，<br>
+有次我逗 AI，<br>
+它说"作者可能什么都不会，只是用来保证上下文"，<br>
+我心想，好像这么做确实是个门道，<br>
+代码全在一个文件里，<br>
+AI 每次改它，<br>
+上下文是完整的，<br>
+不用跨文件猜</p>
+<p>随做，随用，随测，<br>
+不搞深奥的功能，<br>
+不搞不稳定的东西</p>
+<h2 id="假装陌生人">假装陌生人</h2>
+<p>假装陌生人问 AI，<br>
+是这几天才开始的</p>
+<p>就是假装我不是作者，<br>
+把项目链接发给 AI，<br>
+问它，<br>
+这个项目有价值吗，<br>
+这个项目垃圾到什么程度</p>
+<p>一遍遍问，<br>
+乐此不疲</p>
+<p>这不是自恋，<br>
+至少不全是，<br>
+这是绕过"作者本人"的自尊心，<br>
+让 AI 当那个不认识的网友，<br>
+替我说点不那么好听但真实的评价</p>
+<p>你想听好话，问它好在哪，<br>
+你想听真话，问它烂在哪</p>
+<p>问着问着，<br>
+我开始在乎功能之间的联系，<br>
+然后有了三个问题</p>
+<p>功能再多，没人爱用有什么用<br>
+加个插件就能干翻我们，我们的意义是什么<br>
+功能单方面都有对手，加在一块就没有了，<br>
+可归根结底，得有人能用</p>
+<p>这些话大半是 AI 替我说的，<br>
+但说进了我心里</p>
+<h2 id="sip-是什么">sip 是什么</h2>
+<p>一开始管它叫"信息防火墙"，<br>
+觉得这词云里雾里，<br>
+弃了</p>
+<p>现在的定位是本地优先的个人信息库，<br>
+五个动词，<br>
+收集，保存，追踪，筛选，使用</p>
+<p>收集，<br>
+RSS / RSSHub 订阅源</p>
+<p>保存，<br>
+全文抓取，版本快照</p>
+<p>追踪，<br>
+作者改了什么，<br>
+我最得意的功能，<br>
+sip 自动保存 v1/v2/v3，<br>
+谁偷偷改了稿，<br>
+diff 一屏看清楚</p>
+<p>筛选，<br>
+Insights 报告，Source Policy 规则，跨源去重</p>
+<p>使用，<br>
+全文/语义搜索，接 Agent / Bot，导出</p>
+<p>它有一条原则，<br>
+只做确定性的规则和本地事实的存储，<br>
+凡需要判断的事，<br>
+都交还给人，<br>
+AI 帮你理解信息，<br>
+但不替你决定信息的价值</p>
+<p>毕竟我是那个读不进去书的人，<br>
+我太懂信息过载是什么滋味，<br>
+所以给它设计了"一天一碗"，<br>
+每天固定五篇，<br>
+读完就关，<br>
+防过载，<br>
+也防茧房</p>
+<p>遥测模块起名叫苏暖泉（Sumenia），<br>
+默认关闭，仅本地保存，绝不自动上传，<br>
+只安静记一点阅读事实，<br>
+不造画像</p>
+<h2 id="一个重度的-AI-用户">一个重度的 AI 用户</h2>
+<p>其实我本身是个重度的 AI 用户，<br>
+在 DeepSeek 上已经花了 160，<br>
+其中光 sip 就占 60</p>
+<p>我靠 AI 学了很多东西，<br>
+包括高中知识</p>
+<p>AI 对我来说不只是写代码的工具，<br>
+它是我读不进去书之后，<br>
+重新学会学习的入口，<br>
+书本的字排不进脑子，<br>
+但 AI 能把同一件事，<br>
+拆成我能接住的样子，<br>
+一遍不行，<br>
+就换一种说法再来一遍，<br>
+它不烦</p>
+<p>这也是 sip 为什么会有 AI 友好的那一面，<br>
+因为作者本人，<br>
+就是靠 AI 才能把书读进去的那种人</p>
+<h2 id="关于-产品经理根本不用产品">关于"产品经理根本不用产品"</h2>
+<p>我听过最扎心的话是，<br>
+产品经理根本不用产品</p>
+<p>我很怕这句话落在我头上，<br>
+一个做读书软件的人，<br>
+自己读不进去书，<br>
+这不是现成的笑话吗</p>
+<p>但后来我想明白一件事，<br>
+sip 恰恰只有我能做出来，<br>
+因为我就是那个用户</p>
+<p>读不进去，<br>
+所以要做全文抓取和沉浸阅读，<br>
+害怕错过，<br>
+所以要做版本追踪，<br>
+信息太多会崩，<br>
+所以要做一天一碗，<br>
+怀疑 AI 引用垃圾源，<br>
+所以要做白名单</p>
+<p>一个真正"不用产品"的人做不出这些细节，<br>
+他不疼，<br>
+就不知道哪里需要止痛</p>
+<p>你也可以说这是玩物丧志，<br>
+但一个玩物丧志的人，<br>
+写不出 8.4 分的测试报告，<br>
+做不出 +696 行零回归</p>
+<p>玩物的人很多，<br>
+丧志的不写测试</p>
+<h2 id="告一段落">告一段落</h2>
+<p>写到这里，<br>
+这个项目就算告一段落了</p>
+<p>回头看，<br>
+这个暑假其实是一条线，<br>
+先写了个 v0.1，<br>
+跑去玩 MC，<br>
+玩到写报站 mod，<br>
+说到底还是想自己造东西，<br>
+然后城市没建成，<br>
+八月初整个人迷离，<br>
+8 月 8 日把 sip 捡起来，<br>
+五天，<br>
+从 v0.1 冲到 v1.1.4</p>
+<p>一个读不进去书的人，<br>
+从一座没建成的城市里走出来，<br>
+和 AI 一起，<br>
+做了一个帮人读书的软件</p>
+<p>有阵子我特别喜欢铁路，<br>
+甚至认真想过深耕下去，<br>
+但那条路志同道合的人太少，<br>
+资料工作量又太大，<br>
+最要命的是，<br>
+AI 不会玩游戏，<br>
+它帮不了我</p>
+<p>那就去搞 AI 最擅长的吧</p>
+<p>现在，<br>
+这条路走完一段了，我要去回归当下了</p>
+<p>软件会放在那里，数据会一直留着，<br>
+需要它的时候，它还在</p>
+<p>茶馆还是那个茶馆，<br>
+sip 还在路上</p>
+<p>愿下次相见，别来无恙<br>
+🍲<br>
+晚安<br>
+2026.8.12 23:03<br>
+hahahotsoup with &lt;3</p>
+</article><article class="mt-6 comment-container"><script src="https://giscus.app/client.js" data-repo="hahahotsoup/hahahotsoup.github.io" data-repo-id="R_kgDOOzSBAA" data-category="Announcements" data-category-id="DIC_kwDOOzSBAM4Cufrm" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async>></script></article></div></div></div></main><footer class="is-flex is-flex-direction-column is-align-items-center is-flex-shrink-0 is-family-serif"><section class="sns-container"><a title="github" target="_blank" rel="noopener nofollow" href="//github.com/hahahotsoup" aria-label="GitHub"><i class="ri-github-line"></i></a><a title="bilibili" target="_blank" rel="noopener nofollow" href="//space.bilibili.com/1714437150" aria-label="Bilibili"><i class="ri-bilibili-line"></i></a><a title="twitter" target="_blank" rel="noopener nofollow" href="//twitter.com/hahahotsoup" aria-label="Twitter"><i class="ri-twitter-line"></i></a><a title="email" target="_blank" rel="noopener nofollow" href="mailto:hahahotsoup@foxmail.com" aria-label="Email"><i class="ri-mail-line"></i></a><a title="rss" target="_blank" rel="noopener nofollow" href="https://blog.hotsouprealm.top/atom.xml" aria-label="RSS"><i class="ri-rss-line"></i></a></section><p><span>Copyright ©</span><span> hahahotsoup</span></p><div class="is-flex is-justify-content-center is-flex-wrap-wrap"><p>Powered by Hexo &verbar;&nbsp;</p><p class="is-flex is-justify-content-center"><a title="Hexo theme" target="_blank" rel="noopener" href="//github.com/Haojen/hexo-theme-Claudia/blob/master/README-CN.md">Theme Claudia</a></p></div><div></div><div></div><p> <a title="法律文书" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.zh-hans"> <i class="ri-creative-commons-line"> </i><i class="ri-creative-commons-by-line"> </i><i class="ri-creative-commons-nc-line"> </i><i class="ri-creative-commons-sa-line"></i></a><span></span></p><div class="quote-container" style="text-align: center; opacity: 0.8; margin: 2rem 0;"><blockquote style="font-style: italic; font-size: 1.2rem; margin: 1rem 0;"><i class="ri-double-quotes-l" style="margin-right: 0.5rem;"></i><span id="hitokoto-text">莫让自己的头脑成为别人思想的跑马场</span><i class="ri-double-quotes-r" style="margin-left: 0.5rem;"></i></blockquote><p style="font-size: 0.9rem; color: var(--second-text-color);"><span id="hitokoto-from">—— 叔本华</span></p></div></footer><script async defer src="https://buttons.github.io/buttons.js"></script><script>var controller = new AbortController()
+setTimeout(function () { controller.abort() }, 3000)
+fetch('https://v1.hitokoto.cn', { signal: controller.signal })
+  .then(function (res) { return res.json() })
+  .then(function (data) {
+    document.getElementById('hitokoto-text').textContent = data.hitokoto
+    document.getElementById('hitokoto-from').textContent = '—— ' + (data.from || '一言')
+  })
+  .catch(function () {
+    // 请求失败或超时，保留默认的叔本华名言
+  })</script><script src="/js/post.js"></script></body></html>

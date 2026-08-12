@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.hotsouprealm.top/%E8%AF%BB%E4%B8%8D%E8%BF%9B%E5%8E%BB%E4%B9%A6%E7%9A%84%E4%BA%BA%EF%BC%8C%E5%81%9A%E4%BA%86%E4%B8%80%E4%B8%AA%E8%AF%BB%E4%B9%A6%E7%9A%84%E8%BD%AF%E4%BB%B6/</loc>
+    
+    <lastmod>2026-08-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hotsouprealm.top/%E5%86%8D%E8%A7%81%EF%BC%8CMTR%EF%BC%9B%E4%BD%A0%E5%A5%BD%EF%BC%8CCreate%E2%80%94%E2%80%94%E6%88%91%E7%9A%84%E5%88%97%E8%BD%A6%E4%BB%8E%20Fabric%20%E9%A9%B6%E5%90%91%E4%BA%86%20NeoForge/</loc>
     
     <lastmod>2026-08-08</lastmod>
@@ -157,7 +166,7 @@
 
   <url>
     <loc>https://blog.hotsouprealm.top/</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -166,50 +175,50 @@
 
   
   <url>
-    <loc>https://blog.hotsouprealm.top/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.hotsouprealm.top/categories/%E5%BF%83%E7%90%86%E8%87%AA%E5%8A%A9/</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.hotsouprealm.top/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.hotsouprealm.top/categories/%E7%83%AD%E6%B1%A4%E7%9A%84%E6%84%8F%E8%AF%86%E7%A9%BA%E9%97%B4/</loc>
-    <lastmod>2026-08-11</lastmod>
+    <loc>https://blog.hotsouprealm.top/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.hotsouprealm.top/categories/%E5%BF%83%E7%90%86%E8%87%AA%E5%8A%A9/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hotsouprealm.top/categories/%E7%83%AD%E6%B1%A4%E7%9A%84%E6%84%8F%E8%AF%86%E7%A9%BA%E9%97%B4/</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hotsouprealm.top/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.hotsouprealm.top/categories/%E8%8C%B6%E8%AF%9D%E4%BC%9A/</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.hotsouprealm.top/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E7%83%AD%E6%B1%A4%E7%9A%84%E6%84%8F%E8%AF%86%E7%A9%BA%E9%97%B4/</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
